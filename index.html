@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Braise — مطعم واستيك هاوس</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar Desktop ===== -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a href="#home" class="logo">Braise</a>
+
+        <nav class="nav-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#menu">المنيو</a>
+          <a href="#about">عن المطعم</a>
+          <a href="#reservation">احجز طاولة</a>
+          <a href="#contact">تواصل</a>
+        </nav>
+
+        <div class="navbar__actions">
+          <button class="cart-btn" id="cartBtn" aria-label="السلة">
+            🛒 <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <a href="#menu" class="btn btn--primary nav-cta">اطلب الآن</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">🔥 تجربة شواء فاخرة لا تُنسى</p>
+        <h1 class="hero__title">أجود أنواع اللحوم المشوية على الفحم بأصولها</h1>
+        <p class="hero__desc">
+          ننتقي أطري قطع اللحوم البلدي والمستوردة يومياً لنقدم لك طعماً أصيلاً
+          يجمع بين الجودة والمهارة.
+        </p>
+
+        <div class="hero__tags">
+          <span class="tag">🥩 ستيك وتندرلوين</span>
+          <span class="tag">🐑 ضاني بلدي</span>
+          <span class="tag">🍗 مشويات فاخرة</span>
+          <span class="tag">🍔 برجر جولد</span>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--primary">تصفح المنيو كامل</a>
+          <a href="#reservation" class="btn btn--ghost">احجز طاولتك الآن</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Menu Section ===== -->
+    <section class="menu section" id="menu">
+      <div class="container">
+        <div class="section-head" data-animate>
+          <p class="section-eyebrow">قائمة الطعام</p>
+          <h2 class="section-title">اختر أطباقك المفضلة</h2>
+        </div>
+
+        <div class="menu-tabs" id="menuTabs">
+          <button class="tab active" data-category="all">الكل</button>
+          <button class="tab" data-category="steaks">ستيك وبقري</button>
+          <button class="tab" data-category="lamb">غنم وضاني</button>
+          <button class="tab" data-category="poultry">دواجن ومكبوث</button>
+          <button class="tab" data-category="starters">مقبلات وشوربة</button>
+          <button class="tab" data-category="desserts">حلو ومشروبات</button>
+        </div>
+
+        <!-- شبكة المنيو الكروت جنب بعض -->
+        <div class="menu-grid" id="menuGrid">
+          <!-- طبق 1 -->
+          <article class="dish-card" data-animate data-category="steaks">
+            <div class="dish-card__img">
+              <img src="8aa52cb5-25a9-4e30-a9d3-aa93d12a83e6.png" alt="ستيك بقري" />
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__top">
+                <h3>ستيك بقري</h3>
+                <span class="price">450 ج.م</span>
+              </div>
+              <p class="dish-desc">
+                ستيك بقري فاخر مشوي على الفحم بصلصة الزبدة والأعشاب.
+              </p>
+              <button
+                class="btn btn--primary btn--sm add-to-cart"
+                data-name="ستيك بقري"
+                data-price="450"
+              >
+                أضف للسلة
+              </button>
+            </div>
+          </article>
+
+          <!-- طبق 2 -->
+          <article class="dish-card" data-animate data-category="steaks">
+            <div class="dish-card__img">
+              <img src="e334a9ec-b771-4eac-905e-2d316e0eaa85.png" alt="ريب آي ستيك" />
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__top">
+                <h3>ريب آي ستيك
+</h3>
+                <span class="price">600 ج.م</span>
+              </div>
+              <p class="dish-desc">
+               قطعة ريب آي طرية وعصيرية، مشوية بإتقان لتحصل على قشرة ذهبية ونكهة غنية، وتُقدّم مع الصوص والسايدز من اختيارك.
+              </p>
+              <button
+                class="btn btn--primary btn--sm add-to-cart"
+                data-name="Kebab Halla"
+                data-price="250"
+              >
+                أضف للسلة
+              </button>
+            </div>
+          </article>
+
+          <!-- طبق 3 -->
+          <article class="dish-card"  data-animate data-category="steaks">
+            <div class="dish-card__img">
+              <img src="0a4dd7d8-9da7-4b9a-bada-da2a9be2917d.png" alt="شرائح اللحم البقري المشوية" />
+            </div>
+            <div class="dish-card__body">
+              <div class="dish-card__top">
+                <h3>شرائح اللحم البقري المشوية</h3>
+                <span class="price">420ج.م</span>
+              </div>
+              <p class="dish-desc">
+              شرائح لحم بقري طرية ومتبلة بعناية، مشوية بإتقان حتى تصبح غنية بالنكهة وذات قوام شهي، وتُقدّم مع الخضروات والتتبيلة الخاصة.
+              </p>
+              <button
+                class="btn btn--primary btn--sm add-to-cart"
+                data-name="شرائح اللحم البقري المشوية"
+                data-price="420"
+              >
+                أضف للسلة
+              </button>
+            </div>
+          </article>
+<!--طيق4  -->
+<article class="dish-card" data-animate data-category="lamb">
+  <div class="dish-card__img">
+    <img src="e499a6e4-e131-436b-b726-8d66d58573b2.png" alt="أجنحة الدجاج المشوية" />
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>أجنحة الدجاج المشوية </h3>
+   
+      <span class="price">350ج.م</span>
+    </div>
+    <p class="dish-desc">أجنحة دجاج متبلة بعناية ومشوية حتى تصبح ذهبية ومقرمشة من الخارج وطرية من الداخل، مع صوص غني بالنكهة وتتبيلة خاصة تضيف لها مذاقًا مميزًا.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="أجنحة الدجاج المشوية" data-price="350">أضف للسلة</button>
+  </div>
+</article>
+
+<!-- طبق5-->
+<article class="dish-card" data-animate data-category="poultry">
+  <div class="dish-card__img">
+    <img src="2a8670c5-4aa1-45ee-ae33-18e9e60cee1f.png" alt="صدور دجاج مشوية" />
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>صدور دجاج مشوية</h3>
+      <span class="price">270 ج.م</span>
+    </div>
+    <p class="dish-desc">صدور دجاج طرية ومتّبلة بتتبيلة خاصة، مشوية بإتقان حتى تكتسب نكهة غنية وقشرة ذهبية شهية، وتُقدّم مع خضروات مشوية وصوص مميز.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="صدور دجاج مشوية" data-price="270">أضف للسلة</button>
+  </div>
+</article>
+  
+
+<!-- طبق6-->
+<article class="dish-card" data-animate data-category="poultry">
+  <div class="dish-card__img">
+    <img src="01a147a2-fe97-48ac-9232-e45eab467488.png" alt="ستيك الدجاج المشوي">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>ستيك الدجاج المشوي</h3>
+      <span class="price">500 ج.م</span>
+    </div>
+    <p class="dish-desc">قطع من صدور الدجاج الطرية، متبلة بتتبيلة خاصة ومشوية بإتقان حتى تكتسب لونًا ذهبيًا ونكهة غنية، وتُقدّم مع الخضروات المشوية وصوص مميز يكمل المذاق.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="ستيك الدجاج المشوي" data-price="500">أضف للسلة</button>
+  </div>
+</article> 
+
+ <!-- طبف 7 -->
+<article class="dish-card" data-animate data-category="lamb">
+  <div class="dish-card__img">
+    <img src="99216cfb-eff1-42cf-9c3b-9481f9bcb2af.png" alt="ستيك اللحم المشوي بالفلفل والبصل">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>ستيك اللحم المشوي بالفلفل والبصل</h3>
+      <span class="price">720 ج.م</span>
+    </div>
+    <p class="dish-desc">شرائح لحم طرية ومتبلة بتوابل غنية، مشوية حتى تكتسب نكهة مدخنة وقشرة شهية، وتُقدّم مع شرائح الفلفل الملون والبصل المشوي، مع لمسة من البقدونس الطازج .</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="ستيك اللحم المشوي بالفلفل والبصل" data-price="720">أضف للسلة</button>
+  </div>
+</article>
+
+
+ <!-- طبق 8-->
+<article class="dish-card" data-animate data-category="poultry">
+  <div class="dish-card__img">
+    <img src="5eed03ab-a735-4e17-85a4-dc7328af3105.png" alt="مكبوس اللحم">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>مكبوس اللحم</h3>
+      <span class="price">600 ج.م</span>
+    </div>
+    <p class="dish-desc">
+أرز بسمتي متبّل بتشكيلة غنية من البهارات العطرية، يُقدّم مع قطع لحم بقري طرية ومطهية ببطء حتى تتشرب النكهات، مع البصل المحمّر والزبيب واللوز ولمسة من البقدونس الطازج.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="مكبوس اللحم" data-price="600">أضف للسلة</button>
+  </div>
+</article>
+
+
+<!--طبق 9-->
+<article class="dish-card" data-animate data-category="starters">
+  <div class="dish-card__img">
+    <img src="7c0d0143-3735-4ef0-a57e-f60b3ad15932.png" alt="حمص بالطحينة">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>حمص بالطحينة</h3>
+      <span class="price">120 ج.م</span>
+    </div>
+    <p class="dish-desc">
+
+حمص كريمي ناعم محضّر من الحمص والطحينة وعصير الليمون، يُقدّم مع زيت الزيتون وحبات الحمص الكاملة، ويُزيّن برشة بابريكا وبقدونس طازج لنكهة شرقية أصيلة.
+   </p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="حمص بالطحينة" data-price="120">أضف للسلة</button>
+  </div>
+</article>
+  
+
+
+<!--  طبق 10-->
+<article class="dish-card" data-animate data-category="starters">
+  <div class="dish-card__img">
+    <img src="7a5a1d9a-5184-4cca-ac11-2abc3ad374e2.png" alt="بطاطس مقلية">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>بطاطس مقلية</h3>
+      <span class="price">80 ج.م</span>
+    </div>
+    <p class="dish-desc">
+أصابع بطاطس ذهبية ومقرمشة من الخارج وطرية من الداخل، متبّلة بخفة ومزيّنة بلمسة من الأعشاب الطازجة، وتُقدّم مع صوص الكاتشب.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="بطاطس مقلية" data-price="80">أضف للسلة</button>
+  </div>
+</article>
+  
+
+<!-- طبق 11-->
+<article class="dish-card" data-animate data-category="starters">
+  <div class="dish-card__img">
+    <img src="928eebd0-0a00-4180-bb88-760303c90adb.png" alt="شربه عدس">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>شوربة عدس</h3>
+      <span class="price">110 ج.م</span>
+    </div>
+    <p class="dish-desc">
+شوربة عدس دافئة وغنية محضّرة من العدس الأحمر والتوابل العطرية، بقوام كريمي ناعم ونكهة شرقية مميزة، ومزيّنة بالبقدونس الطازج ورشة من التوابل</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="شوربة عدس" data-price="110">أضف للسلة</button>
+  </div>
+</article>
+  
+
+
+<!-- طبق 12 -->
+<article class="dish-card" data-animate data-category="desserts">
+  <div class="dish-card__img">
+    <img src="4fc98fd5-448f-4464-8fb8-dba3e8d10ab2.png" alt="كيك الشوكولاتة الغني والمخبوز بإتقان">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>كيك الشوكولاتة الغني والمخبوز بإتقان</h3>
+      <span class="price">160 ج.م</span>
+    </div>
+    <p class="dish-desc">كيك الشوكولاتة الغني والمخبوز بإتقان، يُقدَّم دافئًا مع قلب من الشوكولاتة السائلة والذائبة. يُزيَّن برشة من السكر البودرة ويُقدَّم مع آيس كريم الفانيليا والفراولة الطازجة، ليمنحك تجربة حلوة وفاخرة لا تُقاوم.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="كيك الشوكولاتة الغني والمخبوز بإتقان" data-price="160">أضف للسلة</button>
+  </div>
+</article>
+
+
+
+<!-- طبق 13 -->
+<article class="dish-card" data-animate data-category="desserts">
+  <div class="dish-card__img">
+    <img src="449df0e8-99a6-4ee4-a65c-0642ac754497.png" alt="آيس كريم كريمي وناعم بنكهة الفانيليا">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>آيس كريم كريمي وناعم بنكهة الفانيليا</h3>
+      <span class="price">60 ج.م</span>
+    </div>
+    <p class="dish-desc">
+يُقدَّم مع صوص الشوكولاتة الغني والمكسرات المقرمشة، ويُزيَّن بالنعناع والفراولة الطازجة ليجمع بين القوام الكريمي والنكهة الحلوة في كل لقمة.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="آيس كريم كريمي وناعم بنكهة الفانيليا" data-price="60">أضف للسلة</button>
+  </div>
+</article>
+  
+
+
+<!-- طبق 14-->
+<article class="dish-card" data-animate data-category="desserts">
+  <div class="dish-card__img">
+    <img src="58451f86-2038-4847-be45-c80d1f6131b2.png" alt="عصير برتقال طازج ومنعش">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>عصير برتقال طازج ومنعش</h3>
+      <span class="price">100 ج.م</span>
+    </div>
+    <p class="dish-desc">
+محضّر من البرتقال الطبيعي ويُقدَّم باردًا مع نكهة حمضية حلوة ومنعشة، ليكون اختيارًا مثاليًا لبدء يومك أو للاستمتاع به مع وجبتك.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="عصير برتقال طازج ومنعش" data-price="100">أضف للسلة</button>
+  </div>
+</article>
+  
+
+
+
+<!-- طبق 15-->
+<article class="dish-card" data-animate data-category="desserts">
+  <div class="dish-card__img">
+    <img src="e9f65572-7eb4-4920-876c-55393bca59a8.png" alt="قهوة عربية أصيلة وعطرة">
+  </div>
+  <div class="dish-card__body">
+    <div class="dish-card__top">
+      <h3>قهوة عربية أصيلة وعطرة</h3>
+      <span class="price">70 ج.م</span>
+    </div>
+    <p class="dish-desc">
+تُحضَّر بطريقة تقليدية مع لمسة من الهيل، وتُقدَّم ساخنة في فنجان أنيق بجانب التمر الفاخر. تتميز بنكهتها الغنية والخفيفة، وهي مثالية للضيافة والاستمتاع بلحظات هادئة.</p>
+    <button class="btn btn--primary btn--sm add-to-cart" data-name="قهوة عربية أصيلة وعطرة" data-price="70">أضف للسلة</button>
+  </div>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="about section" id="about">
+      <div class="container about__wrap" data-animate>
+        <div class="about__badge">BRAISE EXPERIENCE</div>
+        <div class="section-head about__head">
+          <p class="section-eyebrow">عن المطعم</p>
+          <h2 class="section-title">حيث تبدأ الحكاية من أول لقمة</h2>
+        </div>
+
+        <p class="about__lead">
+          مرحبًا بك في Braise، حيث نجمع بين المذاق الأصيل، الجودة العالية،
+          والأجواء الفاخرة لنقدم لك تجربة تتجاوز مجرد تناول الطعام.
+        </p>
+        <p class="about__text">
+          من أول لحظة تدخل فيها، هتعيش أجواء مميزة تجمع بين الدفء والأناقة،
+          بينما تنتظرك قائمة غنية بأشهى الأطباق المحضّرة بعناية باستخدام
+          مكونات طازجة ونكهات مختارة بعناية.
+        </p>
+        <p class="about__text">
+          سواء كنت تبحث عن وجبة شهية مع العائلة، عشاء مميز، أو سهرة جميلة
+          مع الأصدقاء، ستجد عندنا كل ما يجعل لحظتك ألذ وأجمل.
+        </p>
+
+        <div class="about__features">
+          <div class="about-card"><span>🥩</span><h3>جودة مختارة</h3><p>مكونات طازجة وقطع لحوم مختارة بعناية.</p></div>
+          <div class="about-card"><span>🔥</span><h3>شواء بإتقان</h3><p>نكهات غنية وتحضير يبرز طعم كل طبق.</p></div>
+          <div class="about-card"><span>✨</span><h3>أجواء مميزة</h3><p>مكان أنيق ودافئ لوقت يستحق التكرار.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Reservation Section ===== -->
+    <section class="reservation section" id="reservation">
+      <div class="container reservation-content" data-animate>
+        <p class="section-eyebrow">احجز تجربتك</p>
+        <h2>احجز طاولتك</h2>
+        <p>اختار الموعد المناسب وسيتم تجهيز رسالة الحجز لك عبر واتساب.</p>
+
+        <form id="reservationForm">
+          <input type="text" id="name" placeholder="الاسم" required>
+          <input type="tel" id="phone" placeholder="رقم الهاتف" required>
+          <input type="number" id="guests" placeholder="عدد الأشخاص" min="1" required>
+          <input type="date" id="date" required>
+          <input type="time" id="time" required>
+          <textarea id="message" placeholder="طلبات خاصة - اختياري"></textarea>
+          <button type="submit">احجز طاولتك الآن</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="contact section" id="contact">
+      <div class="container" data-animate>
+        <div class="section-head">
+          <p class="section-eyebrow">تواصل معنا</p>
+          <h2 class="section-title">يسعدنا تواصلك</h2>
+          <p class="contact__intro">للحجز، الاستفسارات أو أي طلب خاص، تواصل معنا وسنكون سعداء بخدمتك.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact-card">
+            <span class="contact-card__icon">📞</span>
+            <h3>الهاتف</h3>
+            <p>01XXXXXXXXX</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card__icon">✉️</span>
+            <h3>البريد الإلكتروني</h3>
+            <p>info@braise.com</p>
+          </div>
+          <div class="contact-card">
+            <span class="contact-card__icon">📍</span>
+            <h3>العنوان</h3>
+            <p>القاهرة، مصر</p>
+          </div>
+        </div>
+
+        <div class="contact__actions">
+          <a href="#reservation" class="btn btn--primary">احجز طاولة</a>
+          <a href="#home" class="btn btn--ghost">العودة للرئيسية</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Mobile Bottom Navigation Bar ===== -->
+    <nav class="mobile-bottom-nav">
+      <a href="#home" class="mobile-nav-item active">
+        <span class="icon">🏠</span><span>الرئيسية</span>
+      </a>
+      <a href="#menu" class="mobile-nav-item">
+        <span class="icon">🍽️</span><span>المنيو</span>
+      </a>
+      <a href="#about" class="mobile-nav-item">
+        <span class="icon">✨</span><span>عنّا</span>
+      </a>
+      <a href="#reservation" class="mobile-nav-item">
+        <span class="icon">📅</span><span>حجز</span>
+      </a>
+      <a href="javascript:void(0)" class="mobile-nav-item" id="mobileCartBtn">
+        <span class="icon">🛒</span><span>السلة</span>
+      </a>
+      <a href="#contact" class="mobile-nav-item">
+  <span class="icon">📞</span>
+  <span>تواصل</span>
+</a>
+    </nav>
+    <!-- ===== Cart Drawer ===== -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-drawer__header">
+        <h3>سلة الطلبات</h3>
+        <button class="cart-close" id="closeCart">✕</button>
+      </div>
+      <div class="cart-drawer__items" id="cartItems">
+        <p class="cart-empty">السلة فاضية دلوقتي 🍽️</p>
+      </div>
+      <div class="cart-drawer__footer">
+        <div class="cart-total">
+          <span>الإجمالي:</span>
+          <span id="cartTotal">0 ج.م</span>
+        </div>
+        <a
+          href="#checkout"
+          class="btn btn--primary"
+          style="width: 100%"
+          id="goToCheckout"
+          >إتمام الطلب</a
+        >
+      </div>
+    </aside>
+
+    <button id="backToTop" class="back-to-top" aria-label="الرجوع للأعلى">
+      ↑
+    </button>
+
+  <script src="index.js"></script>
+  </body>
+</html>
