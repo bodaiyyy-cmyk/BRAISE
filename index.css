@@ -760,16 +760,12 @@ section[id] { scroll-margin-top: 90px; }
 }
 
 p {
-  font-family: "Lalezar", sans-serif;
-
-  /* حجم الخط */
-  font-size: 23px;
-
-  /* تخانة الخط */
-  font-weight: 200;
-
-  /* المسافة بين السطور */
-  line-height: 2.5;
+font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 
    word-spacing: 1.5px;
 }
